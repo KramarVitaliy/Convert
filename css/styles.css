@@ -467,9 +467,20 @@ footer p {
   header .sup-state {
     width: auto;
   }
+  header form {
+    width: 82%;
+  }
   main .more-info {
     flex-wrap: wrap;
     padding: 60px 0 55px 20px;
+  }
+  main .more-info .left-col {
+    display: flex;
+    flex-flow: column;
+  }
+  main .more-info .left-col > p {
+    width: 97%;
+    font-size: 13px;
   }
   main .more-info .right-col {
     padding: 0;
@@ -489,9 +500,17 @@ footer p {
   }
   main .features .features-block > img {
     align-self: center;
+    width: 88%;
   }
   main .features .features-block .features-list {
     margin: 30px 0 0 20px;
+  }
+  main .features .features-block .features-list .features-item .features-description h1 {
+    width: auto;
+  }
+  main .features .features-block .features-list .features-item .features-description p {
+    font-size: 12px;
+    width: 86%;
   }
   main .screenshots {
     grid-template-columns: 1fr 1fr;

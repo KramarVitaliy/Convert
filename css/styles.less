@@ -449,12 +449,28 @@ footer{
     .sup-state{
       width: auto;
     }
+
+    form{
+      width: 82%;
+    }
   }
   
   main{
     .more-info{
       flex-wrap: wrap;
       padding: 60px 0 55px 20px;
+
+      .left-col{
+        display: flex;
+        flex-flow: column;
+
+        
+        > p{
+          width: 97%;
+          font-size: 13px;
+        }
+      }
+
 
       .right-col{
         padding: 0;
@@ -479,10 +495,26 @@ footer{
 
         > img{
           align-self: center;
+          width: 88%;
         }
 
         .features-list{
           margin: 30px 0 0 20px;
+
+          .features-item{
+
+            .features-description{
+              h1{
+                width: auto;
+              }
+    
+              p{
+                font-size: 12px;
+                width: 86%;
+              }
+            }
+          }
+
         }
       }
     }
