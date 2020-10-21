@@ -201,8 +201,7 @@ main{
     max-width: 940px;
     margin: 0 auto;
     display: flex;
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding: 60px 0 70px 0;
 
     .left-col{
       flex: 1;
@@ -296,6 +295,7 @@ main{
       > img{
         width: 428px;
         height: 383px;
+        margin: 0 auto;
       }
 
       .features-list{
@@ -454,12 +454,36 @@ footer{
   main{
     .more-info{
       flex-wrap: wrap;
+      padding: 60px 0 55px 20px;
+
+      .right-col{
+        padding: 0;
+        flex-flow: column wrap;
+
+        > div{
+          display: flex;
+          margin-top: 30px;
+          flex-direction: column;
+
+          > img{
+            align-self: center;
+          }
+        }
+      }
     }
     
     .features{
       .features-block{
-        width: 480px;
+        width: auto;
         flex-wrap: wrap;
+
+        > img{
+          align-self: center;
+        }
+
+        .features-list{
+          margin: 30px 0 0 20px;
+        }
       }
     }
     
@@ -473,6 +497,18 @@ footer{
       .answer-list{
         width: auto;
         height: auto;
+        margin: 40px 10px 0 20px;
+
+        .answer-item{
+          width: auto;
+
+          p{
+            width: auto;
+            letter-spacing: normal;
+            font-size: 13px;
+          }
+          
+        }
       }
       
     }

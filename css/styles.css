@@ -256,8 +256,7 @@ main .more-info {
   max-width: 940px;
   margin: 0 auto;
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding: 60px 0 70px 0;
 }
 main .more-info .left-col {
   flex: 1;
@@ -341,6 +340,7 @@ main .features .features-block {
 main .features .features-block > img {
   width: 428px;
   height: 383px;
+  margin: 0 auto;
 }
 main .features .features-block .features-list {
   margin: 0 0 0 72px;
@@ -469,10 +469,29 @@ footer p {
   }
   main .more-info {
     flex-wrap: wrap;
+    padding: 60px 0 55px 20px;
+  }
+  main .more-info .right-col {
+    padding: 0;
+    flex-flow: column wrap;
+  }
+  main .more-info .right-col > div {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  main .more-info .right-col > div > img {
+    align-self: center;
   }
   main .features .features-block {
-    width: 480px;
+    width: auto;
     flex-wrap: wrap;
+  }
+  main .features .features-block > img {
+    align-self: center;
+  }
+  main .features .features-block .features-list {
+    margin: 30px 0 0 20px;
   }
   main .screenshots {
     grid-template-columns: 1fr 1fr;
@@ -481,5 +500,14 @@ footer p {
   main .faq .answer-list {
     width: auto;
     height: auto;
+    margin: 40px 10px 0 20px;
+  }
+  main .faq .answer-list .answer-item {
+    width: auto;
+  }
+  main .faq .answer-list .answer-item p {
+    width: auto;
+    letter-spacing: normal;
+    font-size: 13px;
   }
 }
