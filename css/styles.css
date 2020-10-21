@@ -263,14 +263,12 @@ main .more-info .left-col {
   flex: 1;
 }
 main .more-info .left-col h1 {
-  width: 388px;
   height: 67px;
   opacity: 0.87;
   font-family: 'Roboto', sans-serif;
   font-size: 34px;
   font-weight: 400;
   line-height: 40px;
-  text-align: left;
 }
 main .more-info .left-col p {
   width: 420px;
@@ -281,7 +279,6 @@ main .more-info .left-col p {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
   letter-spacing: 0.14px;
 }
 main .more-info .right-col {
@@ -479,9 +476,6 @@ footer p {
   main .more-info .left-col {
     display: flex;
     flex-flow: column;
-  }
-  main .more-info .left-col > h1 {
-    width: auto;
   }
   main .more-info .left-col > p {
     width: 97%;
