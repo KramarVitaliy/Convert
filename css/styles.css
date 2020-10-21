@@ -473,11 +473,15 @@ footer p {
   }
   main .more-info {
     flex-wrap: wrap;
+    flex-flow: column;
     padding: 60px 0 55px 20px;
   }
   main .more-info .left-col {
     display: flex;
     flex-flow: column;
+  }
+  main .more-info .left-col > h1 {
+    width: auto;
   }
   main .more-info .left-col > p {
     width: 97%;
@@ -494,6 +498,9 @@ footer p {
   }
   main .more-info .right-col > div > img {
     align-self: center;
+  }
+  main .features > p {
+    width: auto;
   }
   main .features .features-block {
     width: auto;

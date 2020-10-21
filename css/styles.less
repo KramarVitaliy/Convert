@@ -459,12 +459,16 @@ footer{
   main{
     .more-info{
       flex-wrap: wrap;
+      flex-flow: column;
       padding: 60px 0 55px 20px;
 
       .left-col{
         display: flex;
         flex-flow: column;
 
+        > h1{
+          width: auto;
+        }
         
         > p{
           width: 97%;
@@ -490,6 +494,10 @@ footer{
     }
     
     .features{
+      > p{
+        width: auto;
+      }
+
       .features-block{
         width: auto;
         flex-wrap: wrap;
