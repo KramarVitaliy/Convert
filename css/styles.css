@@ -534,3 +534,17 @@ footer p {
     font-size: 13px;
   }
 }
+@media (max-width: 768px) {
+  main .more-info {
+    width: 768px;
+  }
+  main .more-info .left-col {
+    flex: 1;
+  }
+  main .more-info .left-col h1 {
+    width: auto;
+  }
+  main .more-info .left-col p {
+    width: auto;
+  }
+}
