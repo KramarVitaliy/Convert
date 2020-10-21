@@ -494,7 +494,9 @@ footer p {
     align-self: center;
   }
   main .features > p {
-    width: auto;
+    font-size: 13px;
+    width: 78%;
+    text-align: center;
   }
   main .features .features-block {
     width: auto;
