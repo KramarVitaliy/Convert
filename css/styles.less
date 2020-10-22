@@ -430,6 +430,27 @@ footer{
   }
 }
 
+
+// @media (max-width: 768px){
+//   main{
+//     .more-info{
+//       width: 768px;
+//       .left-col{
+//         flex: 1;
+//         h1{
+//           width: auto;
+//         }
+//         p{
+//           width: auto;
+//         }
+//       }
+
+//       .right-col{
+//       }
+//     }
+//   }
+// }
+
 @media (max-width: 480px){
   header{
     background-position-x: left;
@@ -462,6 +483,10 @@ footer{
       .left-col{
         display: flex;
         flex-flow: column;
+
+        > h1{
+          width: 97%;
+        }
 
         > p{
           width: 97%;
@@ -550,26 +575,6 @@ footer{
     }
   }
 
-}
-
-@media (max-width: 768px){
-  main{
-    .more-info{
-      width: 768px;
-      .left-col{
-        flex: 1;
-        h1{
-          width: auto;
-        }
-        p{
-          width: auto;
-        }
-      }
-
-      .right-col{
-      }
-    }
-  }
 }
 
 

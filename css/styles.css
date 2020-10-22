@@ -477,6 +477,9 @@ footer p {
     display: flex;
     flex-flow: column;
   }
+  main .more-info .left-col > h1 {
+    width: 97%;
+  }
   main .more-info .left-col > p {
     width: 97%;
     font-size: 13px;
@@ -532,19 +535,5 @@ footer p {
     width: auto;
     letter-spacing: normal;
     font-size: 13px;
-  }
-}
-@media (max-width: 768px) {
-  main .more-info {
-    width: 768px;
-  }
-  main .more-info .left-col {
-    flex: 1;
-  }
-  main .more-info .left-col h1 {
-    width: auto;
-  }
-  main .more-info .left-col p {
-    width: auto;
   }
 }
