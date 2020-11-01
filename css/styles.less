@@ -1,6 +1,237 @@
- // compress: false, sourceMap: false, out: true
+ // compress: false, sourceMap: true, out: true
 
 @import "_vars.less";
 @import "reset.less";
 @import "desktop.less";
 @import "mobile.less";
+
+body {
+  font-family: @mainfont;
+}
+
+header {
+  background: url(../img/header_bg.jpg) no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: @header-text-color;
+
+  .logo {
+    color: @white;
+
+    h1 {
+      text-transform: uppercase;
+      font-family: @logofont, sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+      letter-spacing: 5px;
+    }
+
+    svg {
+      fill: @white;
+    }
+
+    span {
+      font-family: 'Source Sans Pro', sans-serif;
+      text-align: center;
+      font-weight: 400;
+      letter-spacing: 4px;
+    }
+  }
+
+  > h1 {
+    font-weight: 300;
+    letter-spacing: -0.68px;
+  }
+
+  .sup-state {
+    margin: 24px auto;
+    font-weight: 400;
+    letter-spacing: 0.68px;
+    line-height: 24px;
+  }
+
+  form {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+    background-color: @form-background;
+    color: rgba(42, 45, 46, .49);
+
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      border: none;
+      padding: 0;
+    }
+
+    legend {
+      opacity: 0.87;
+      font-weight: 400;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      font-weight: 400;
+      line-height: 24.02px;
+
+      input{
+        font-weight: 500;
+        border: none;
+        border-bottom: 1px solid #8c8d8e;
+        background-color: #f6f6f6;
+        outline: none;
+      }
+      
+      input::placeholder {
+        color: @black;
+      }
+    }
+
+    button {
+      background-color: @button-background;
+      color: @white;
+      font-weight: 500;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  }
+}
+
+main {
+  .more-info {
+    display: flex;
+    max-width: 940px;
+    margin: 0 auto;
+
+    .left-col {
+      flex: 1;
+
+      h1 {
+        font-weight: 400;
+        line-height: 38px;
+      }
+
+      p {
+        color: @paragraph-col;
+      }
+    }
+
+    .right-col {
+      display: flex;
+      flex: 1;
+
+      div {
+        h1 {
+          font-weight: 500;
+        }
+        
+        p {
+          color: @paragraph-col;
+          font-weight: 400;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+
+  .features {
+    background-color: @features-background;
+    color: @title-color;
+
+    > h1 {
+      font-weight: 400;
+      text-align: center;
+    }
+
+    > p {
+      text-align: center;
+      opacity: 0.87;
+      font-weight: 400;
+      font-size: 13px;
+    }
+
+    .features-block {
+      display: flex;
+
+      > img {
+        object-fit: contain;
+      }
+
+      .features-list {
+        img {
+          max-width: 27px;
+          max-height: 39px;
+        }
+
+        .features-item {
+          display: flex;
+
+          .features-description {
+            h1 {
+              font-weight: 500;
+            }
+
+            p {
+              color: @paragraph-col;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .screenshots {
+    background-color: @features-background;
+
+    ul {
+      display: grid;
+      padding: 0;
+
+      li {
+        display: flex;
+
+        > img {
+          width: 100%;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  .faq {
+    background-color: @features-background;
+
+    > h1 {
+      font-weight: 400;
+      text-align: center;
+    }
+
+    > p {
+      color: @paragraph-col;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .answer-list {
+      display: flex;
+
+      .answer-item {
+        h1 {
+          font-weight: 500;
+        }
+
+        p {
+          color: @paragraph-col;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+}

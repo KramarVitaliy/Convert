@@ -1,13 +1,12 @@
 // out: false, compress: false, sourceMap: false, main: styles.css
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   header {
     background-position-x: left;
-    padding-top: 67px;
-    max-height: 891px;
+    padding: 67px 0;
 
     .logo {
-      margin: 0 auto 56px;
+      margin-bottom: 45px;
     }
 
     >h1 {
@@ -15,37 +14,34 @@
     }
 
     .sup-state {
-      font-size: 14px;
+      font-size: 13px;
     }
 
     form {
       width: 71%;
-      margin-top: 67px;
-      height: 374px;
+      margin: 60px auto 0;
+      padding: 45px 40px 40px;
 
       fieldset {
         legend {
           font-size: 22px;
-          margin-bottom: 2px;
         }
 
         label {
-          padding: 0;
           font-size: 11px;
-          margin-top: 23px;
+          margin-top: 22px;
 
           input {
-            font-size: 14px;
+            font-size: 13px;
             letter-spacing: normal;
-            padding-bottom: 4px;
+            padding-bottom: 5px;
           }
         }
 
         button {
-          margin-top: 23px;
+          margin: 27px auto 0;
           max-width: 192px;
-          max-height: 39px;
-          font-size: 13px;
+          font-size: 12px;
           padding: 13px 25px;
         }
       }
@@ -64,15 +60,16 @@
 
         > h1 {
           max-width: 94%;
-          font-size: 30px;
+          font-size: 30.6px;
           margin-bottom: 0;
         }
 
         > p {
           width: 97%;
-          font-size: 12px;
-          margin-top: 26px;
+          font-size: 12.6px;
+          margin-top: 20px;
           line-height: 23px;
+          padding-right: 20px;
         }
       }
 
@@ -83,7 +80,7 @@
         > div {
           display: flex;
           flex-direction: column;
-          margin-top: 27px;
+          margin-top: 31px;
           padding: 0;
 
           img {
@@ -96,24 +93,27 @@
 
           h1 {
             font-size: 18px;
+            padding-top: 33px;
+          }
+
+          p {
+            padding-top: 20px;
           }
         }
       }
     }
     
     .features {
-      padding-top: 41px;
+      padding-top: 44px;
 
-      h1 {
+      > h1 {
         font-size: 30px;
       }
 
-      p {
-        font-size: 13px;
-        margin-top: 27px;
-        max-width: 86%;
-        letter-spacing: normal;
-        text-align: center;
+      > p {
+        margin-top: 23px;
+        padding: 0 40px;
+        letter-spacing: -0.19px;
         line-height: 23px;
       }
 
@@ -121,13 +121,19 @@
         flex-wrap: wrap;
         margin-top: 40px;
         justify-content: center;
+        padding: 0 22px;
+
+        > img {
+          width: 100%;
+          padding: 0 5px;
+        }
 
         .features-list {
-          margin: 29px 0 0 0;
-          width: 92%;
+          margin: 30px 0 0 0;
+          width: 100%;
 
           .features-item {
-            margin-bottom: 37px;
+            margin-bottom: 30px;
 
             .features-description {
               margin: 8px 0 0 14px;
@@ -150,14 +156,10 @@
     }
   
     .screenshots {
-      padding-top: 51px;
+      padding-top: 20px;
 
       ul {
         grid-template-columns: repeat(2, 1fr);
-
-        > li {
-          display: flex;
-        }
       }
     }
 
@@ -174,20 +176,18 @@
       }
 
       .answer-list {
+        flex-flow: column wrap;
         margin: 47px 10px 0 20px;
         padding-bottom: 15px;
-        display: flex;
-        flex-flow: column;
-        max-height: 490px;
 
         .answer-item {
           max-height: auto;
-          h1{
+
+          h1 {
             font-size: 18px;
           }
 
           p {
-            max-width: 415px;
             margin: 25px 0 34px;
             line-height: 22px;
             letter-spacing: normal;
