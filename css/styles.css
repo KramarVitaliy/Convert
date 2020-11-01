@@ -115,14 +115,10 @@ blockquote:after,
 q:before,
 q:after {
   content: '';
-  content: none;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-* body {
-  font-family: 'Roboto', sans-serif;
 }
 *,
 *:before,
@@ -130,17 +126,19 @@ table {
   box-sizing: border-box;
   margin: 0;
 }
+body {
+  font-family: 'Roboto', sans-serif;
+}
 header {
-  background: url(../img/header_bg.jpg) no-repeat;
+  background: url(../img/header_bg.jpg) no-repeat center;
   background-size: cover;
-  background-position: center;
-  height: 900px;
+  max-height: 887px;
   margin: 0 auto;
-  padding-top: 90px;
+  padding: 90px 0;
 }
 header .logo {
-  height: 36px;
-  margin: 0 auto 90px auto;
+  max-height: 36px;
+  margin: 0 auto 93px;
   text-align: center;
   color: #ffffff;
 }
@@ -149,7 +147,7 @@ header .logo > h1 {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
   font-size: 30px;
-  letter-spacing: 4px;
+  letter-spacing: 6px;
 }
 header .logo svg {
   fill: #ffffff;
@@ -162,87 +160,84 @@ header .logo span {
   text-align: center;
 }
 header > h1 {
-  opacity: 0.7;
+  color: rgba(255, 255, 255, 0.7);
   font-family: 'Roboto', sans-serif;
   font-size: 56px;
   font-weight: 300;
   text-align: center;
-  color: #ffffff;
-  letter-spacing: -0.56px;
+  letter-spacing: -0.5px;
 }
 header .sup-state {
-  width: 615px;
-  height: 41px;
-  opacity: 0.7;
-  margin: 23px auto;
-  color: #ffffff;
+  max-width: 616px;
+  max-height: 41px;
+  margin: 24px auto;
+  color: rgba(255, 255, 255, 0.7);
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
+  letter-spacing: 0.26px;
+  line-height: 24px;
   text-align: center;
 }
 header form {
-  width: 380px;
+  max-width: 385px;
   height: 393px;
-  margin: 69px auto;
+  margin: 73px auto;
+  padding: 40px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   background-color: #f6f6f6;
-  color: #000000;
 }
 header form fieldset {
+  display: flex;
+  flex-direction: column;
   border: none;
   padding: 0;
 }
 header form legend {
   opacity: 0.87;
-  padding: 41px 0 8px 0;
+  margin-bottom: 9px;
   font-family: 'Roboto', sans-serif;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 400;
   text-align: center;
 }
-header form p {
-  margin: 23px 41px;
+header form label {
   display: flex;
   flex-direction: column;
-}
-header form p label {
-  width: 64px;
-  height: 10px;
-  opacity: 0.49;
-  color: #2a2d2e;
+  margin-top: 17px;
+  padding: 0 5px;
+  color: rgba(42, 45, 46, 0.49);
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 24.02px;
-  text-align: left;
-  letter-spacing: 0.12px;
 }
-header form p input {
-  width: 100%;
+header form input {
   color: #000000;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  text-align: left;
   letter-spacing: 0.16px;
   border: none;
   border-bottom: 1px solid #8c8d8e;
   background-color: #f6f6f6;
   opacity: 0.87;
-  padding: 0 0 11px 0;
+  padding-bottom: 11px;
   outline: none;
 }
-header form p button {
-  width: 216px;
-  height: 42px;
-  margin: 0 auto;
+header form input::placeholder {
+  color: #000000;
+}
+header form button {
+  max-width: 216px;
+  max-height: 42px;
+  margin: 19px auto 0;
+  padding: 12px 21px;
   background-color: #9c27b0;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.16px;
@@ -254,27 +249,27 @@ main {
   background-color: #ffffff;
 }
 main .more-info {
+  display: flex;
   max-width: 940px;
   margin: 0 auto;
-  display: flex;
-  padding: 60px 0 70px 0;
+  padding: 66px 0 70px;
 }
 main .more-info .left-col {
   flex: 1;
 }
 main .more-info .left-col h1 {
-  height: 67px;
+  max-height: 67px;
+  margin-bottom: 40px;
   opacity: 0.87;
   font-family: 'Roboto', sans-serif;
   font-size: 34px;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 38px;
 }
 main .more-info .left-col p {
-  width: 420px;
-  opacity: 0.87;
-  margin-top: 45px;
-  color: #2a2d2e;
+  max-width: 420px;
+  margin-top: 24px;
+  color: rgba(42, 45, 46, 0.87);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -282,48 +277,45 @@ main .more-info .left-col p {
   letter-spacing: 0.14px;
 }
 main .more-info .right-col {
-  flex: 1;
   display: flex;
+  flex: 1;
   padding-left: 10px;
 }
 main .more-info .right-col > div {
-  margin-right: 20px;
+  padding: 5px 0 0 6px;
 }
-main .more-info .right-col h1 {
+main .more-info .right-col > div h1 {
   opacity: 0.87;
   margin-top: 31px;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
   font-weight: 500;
-  text-align: left;
   font-size: 20px;
   letter-spacing: 0.2px;
 }
-main .more-info .right-col p {
-  opacity: 0.87;
-  margin-top: 36px;
-  color: #2a2d2e;
+main .more-info .right-col > div p {
+  margin-top: 25px;
+  color: rgba(42, 45, 46, 0.87);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  text-align: left;
   line-height: 26px;
 }
 main .features {
   background-color: #fafafa;
-  padding-top: 71px;
+  padding-top: 62px;
   color: #2a2d2e;
 }
 main .features > h1 {
-  height: 25px;
+  max-height: 25px;
   opacity: 0.84;
   font-size: 34px;
   font-weight: 400;
   text-align: center;
 }
 main .features > p {
-  width: 354px;
-  margin: 36px auto 0 auto;
+  margin: 32px auto 0;
+  max-width: 28%;
+  text-align: center;
   opacity: 0.87;
   font-size: 14px;
   font-weight: 400;
@@ -331,117 +323,103 @@ main .features > p {
   line-height: 24px;
 }
 main .features .features-block {
-  width: 914px;
-  margin: 70px auto 0 auto;
   display: flex;
+  max-width: 940px;
+  margin: 67px auto 0 ;
 }
 main .features .features-block > img {
-  width: 428px;
-  height: 383px;
-  margin: 0 auto;
+  max-width: 428px;
+  max-height: 383px;
+  object-fit: contain;
 }
 main .features .features-block .features-list {
   margin: 0 0 0 72px;
 }
 main .features .features-block .features-list img {
-  width: 27px;
-  height: 39px;
+  max-width: 27px;
+  max-height: 39px;
 }
 main .features .features-block .features-list .features-item {
   display: flex;
-  margin-bottom: 46px;
+  margin-bottom: 50px;
 }
 main .features .features-block .features-list .features-item .features-description {
   margin: 10px 0 0 33px;
 }
 main .features .features-block .features-list .features-item .features-description h1 {
-  width: 127px;
-  height: 14px;
+  max-width: 127px;
+  max-height: 14px;
   color: #2a2d2e;
   font-size: 16px;
   font-weight: 500;
-  text-align: left;
 }
 main .features .features-block .features-list .features-item .features-description p {
-  width: 355px;
-  height: 38px;
-  opacity: 0.87;
-  margin-top: 36px;
-  color: #2a2d2e;
+  max-width: 355px;
+  max-height: 38px;
+  margin-top: 32px;
+  color: rgba(42, 45, 46, 0.87);
   font-size: 14px;
   font-weight: 400;
-  text-align: left;
   letter-spacing: 0.16px;
-  line-height: 20px;
+  line-height: 24px;
 }
 main .features .features-block .features-list .features-item:last-child {
   margin: 0;
 }
 main .screenshots {
   background-color: #fafafa;
-  padding-top: 69px;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  padding-top: 70px;
 }
-main .screenshots > img {
+main .screenshots ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0;
+}
+main .screenshots ul li > img {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-}
-main .screenshots .screenshots-image1 {
-  background-image: url(../img/screenshots_image1.png);
-}
-main .screenshots .screenshots-image2 {
-  background-image: url(../img/screenshots_image2.png);
-}
-main .screenshots .screenshots-image3 {
-  background-image: url(../img/screenshots_image3.png);
-}
-main .screenshots .screenshots-image4 {
-  background-image: url(../img/screenshots_image4.png);
 }
 main .faq {
   background-color: #fafafa;
   padding-top: 70px;
 }
 main .faq > h1 {
-  height: 33px;
+  max-height: 33px;
   opacity: 0.87;
   font-size: 34px;
   font-weight: 400;
   text-align: center;
 }
 main .faq > p {
-  height: 14px;
+  max-height: 14px;
   margin-top: 30px;
-  opacity: 0.87;
-  color: #2a2d2e;
+  color: rgba(42, 45, 46, 0.87);
   font-size: 14px;
   font-weight: 400;
   text-align: center;
 }
 main .faq .answer-list {
-  padding: 0;
-  width: 960px;
-  height: 305px;
-  margin: 76px auto 0 auto;
   display: flex;
   flex-flow: column wrap;
+  padding: 0;
+  max-width: 960px;
+  max-height: 305px;
+  margin: 76px auto 0;
 }
 main .faq .answer-list .answer-item {
-  width: 480px;
+  max-width: 480px;
 }
 main .faq .answer-list .answer-item h1 {
-  height: 17px;
+  max-height: 17px;
   opacity: 0.87;
   font-size: 20px;
   font-weight: 500;
 }
 main .faq .answer-list .answer-item p {
-  width: 413px;
-  margin: 32px 0 53px 0;
-  opacity: 0.87;
-  color: #2a2d2e;
+  max-width: 413px;
+  margin: 32px 0 53px;
+  color: rgba(42, 45, 46, 0.87);
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.14px;
@@ -449,40 +427,69 @@ main .faq .answer-list .answer-item p {
 }
 footer p {
   margin: 55px auto;
+  font-size: 14px;
   text-align: center;
 }
 @media (max-width: 480px) {
   header {
     background-position-x: left;
-    padding-top: 65px;
+    padding-top: 67px;
+    max-height: 891px;
   }
   header .logo {
-    margin: 0 auto 60px auto;
+    margin: 0 auto 56px;
   }
   header > h1 {
     font-size: 52px;
   }
   header .sup-state {
-    width: auto;
+    font-size: 14px;
   }
   header form {
-    width: 82%;
+    width: 71%;
+    margin-top: 67px;
+    height: 374px;
+  }
+  header form fieldset legend {
+    font-size: 22px;
+    margin-bottom: 2px;
+  }
+  header form fieldset label {
+    padding: 0;
+    font-size: 11px;
+    margin-top: 23px;
+  }
+  header form fieldset label input {
+    font-size: 14px;
+    letter-spacing: normal;
+    padding-bottom: 4px;
+  }
+  header form fieldset button {
+    margin-top: 23px;
+    max-width: 192px;
+    max-height: 39px;
+    font-size: 13px;
+    padding: 13px 25px;
   }
   main .more-info {
-    flex-wrap: wrap;
-    flex-flow: column;
-    padding: 60px 0 55px 20px;
+    flex-flow: column wrap;
+    padding: 46px 0 55px;
   }
   main .more-info .left-col {
     display: flex;
     flex-flow: column;
+    padding-left: 20px;
   }
   main .more-info .left-col > h1 {
-    width: 97%;
+    max-width: 94%;
+    font-size: 30px;
+    margin-bottom: 0;
   }
   main .more-info .left-col > p {
     width: 97%;
-    font-size: 13px;
+    font-size: 12px;
+    margin-top: 26px;
+    line-height: 23px;
   }
   main .more-info .right-col {
     padding: 0;
@@ -490,50 +497,100 @@ footer p {
   }
   main .more-info .right-col > div {
     display: flex;
-    margin-top: 30px;
     flex-direction: column;
+    margin-top: 27px;
+    padding: 0;
   }
-  main .more-info .right-col > div > img {
+  main .more-info .right-col > div img {
     align-self: center;
   }
-  main .features > p {
+  main .more-info .right-col > div h1,
+  main .more-info .right-col > div p {
+    padding-left: 20px;
+  }
+  main .more-info .right-col > div h1 {
+    font-size: 18px;
+  }
+  main .features {
+    padding-top: 41px;
+  }
+  main .features h1 {
+    font-size: 30px;
+  }
+  main .features p {
     font-size: 13px;
-    width: 78%;
+    margin-top: 27px;
+    max-width: 86%;
+    letter-spacing: normal;
     text-align: center;
+    line-height: 23px;
   }
   main .features .features-block {
-    width: auto;
     flex-wrap: wrap;
-  }
-  main .features .features-block > img {
-    align-self: center;
-    width: 88%;
+    margin-top: 40px;
+    justify-content: center;
   }
   main .features .features-block .features-list {
-    margin: 30px 0 0 20px;
+    margin: 29px 0 0 0;
+    width: 92%;
+  }
+  main .features .features-block .features-list .features-item {
+    margin-bottom: 37px;
+  }
+  main .features .features-block .features-list .features-item .features-description {
+    margin: 8px 0 0 14px;
   }
   main .features .features-block .features-list .features-item .features-description h1 {
-    width: auto;
+    font-size: 15px;
   }
   main .features .features-block .features-list .features-item .features-description p {
-    font-size: 12px;
-    width: 86%;
+    font-size: 13px;
+    margin-top: 29px;
+    max-width: 362px;
+    letter-spacing: normal;
+    line-height: 22px;
   }
   main .screenshots {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    padding-top: 51px;
+  }
+  main .screenshots ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .screenshots ul > li {
+    display: flex;
+  }
+  main .faq {
+    padding-top: 48px;
+  }
+  main .faq h1 {
+    font-size: 31px;
+  }
+  main .faq p {
+    margin-top: 27px;
+    font-size: 13px;
   }
   main .faq .answer-list {
-    width: auto;
-    height: auto;
-    margin: 40px 10px 0 20px;
+    margin: 47px 10px 0 20px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-flow: column;
+    max-height: 490px;
   }
   main .faq .answer-list .answer-item {
-    width: auto;
+    max-height: auto;
+  }
+  main .faq .answer-list .answer-item h1 {
+    font-size: 18px;
   }
   main .faq .answer-list .answer-item p {
-    width: auto;
+    max-width: 415px;
+    margin: 25px 0 34px;
+    line-height: 22px;
     letter-spacing: normal;
+    font-size: 13px;
+  }
+  footer p {
+    margin: 31px auto;
     font-size: 13px;
   }
 }
